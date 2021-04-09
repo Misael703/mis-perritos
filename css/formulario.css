@@ -1,0 +1,52 @@
+#formulario {
+  background: rgb(14, 14, 107);
+  padding: 45px;
+  font-family: cursive;
+}
+
+.form-titulo {
+  background: rgb(104, 39, 39);
+  padding: 20px;
+  text-align: center;
+  color: aquamarine;
+  border-bottom: solid 5px aquamarine;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.form-registro {
+  width: 95%;
+  margin: auto;
+  max-width: 500px;
+  background: white;
+  border-radius: 8px;
+}
+
+.contenedor-input {
+  padding: 10px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+/*creacion de columnas manualmente*/
+.col-sm {
+  width: 42%;
+}
+
+.col-xl {
+  width: 100%;
+}
+/***********************************/
+
+.btn-registrar{
+    background: red;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+    font-family: cursive;
+}
