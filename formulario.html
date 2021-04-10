@@ -44,18 +44,21 @@
       </section>
 
       <section id="formulario">
-        <form class="form-registro" action="" method="POST">
-          <h2 class="form-titulo">Crear una cuenta</h2>
-          <div class="contenedor-input">
-          <input class="col-sm" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese Nombre" required min="2" max="10">
-          <input class="col-sm" type="text" name="txtApellidos" id="txtApellidos" placeholder="Ingrese Apellidos" required min="2" max="10">
-          <input class="col-xl" type="email" name="txtEmail" id="txtEmail" placeholder="Ingrese correo electrónico" required>
-          <input class="col-sm" type="text" name="txtUsuario" id="txtUsuario" placeholder="Ingrese Usuario" required>
-          <input class="col-sm" type="password" name="txtContraseña" id="txtContraseña" placeholder="Ingrese Contraseña" required>
-          <input class="col-xl" type="text" name="txtTelefono" id="txtTelefono" placeholder="Ingrese Telefono" required>
-          <input class="col-xl" type="text" name="txtRut" id="txtRut" placeholder="Ingrese Rut (Ej: 12345678-9)" required>
 
-          <input class="btn-registrar" type="submit" value="Registrar" onclick="mensaje()">
+        <form class="form-registro" action="" method="POST">
+
+          <h2 class="form-titulo">Crear una cuenta</h2>
+
+          <div class="contenedor-input">
+            <input class="col-sm" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese Nombre" required min="2" max="10">
+            <input class="col-sm" type="text" name="txtApellidos" id="txtApellidos" placeholder="Ingrese Apellidos" required>
+            <input class="col-xl" type="email" name="txtEmail" id="txtEmail" placeholder="Ingrese correo electrónico" required>
+            <input class="col-sm" type="text" name="txtUsuario" id="txtUsuario" placeholder="Ingrese Usuario" required>
+            <input class="col-sm" type="password" name="txtContraseña" id="txtContraseña" placeholder="Ingrese Contraseña" required>
+            <input class="col-xl" type="text" name="txtTelefono" id="txtTelefono" placeholder="Ingrese Telefono" required>
+            <input class="col-xl" type="text" name="txtRut" id="txtRut" placeholder="Ingrese Rut (Ej: 12345678-9)" required>
+
+          <input class="btn-registrar" type="submit" value="Registrar">
           <input class="btn-registrar" type="button" value="Validar Rut" onclick="validarRut()">
         </div>
         </form>
