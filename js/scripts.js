@@ -35,7 +35,7 @@ function validaFecha() {
     alert("Fecha incorrecta");
     return false;
   }
-  ////////////////////////////////////////
+  ///////////////////////////////////////
   var unDia = 24 * 60 * 60 * 1000;
   var diferencia_dias = Math.trunc(
     (fechaSistema.getTime() - fechaNuevaUsuario.getTime()) / unDia
@@ -43,7 +43,7 @@ function validaFecha() {
   console.log("Dias: " + diferencia_dias);
   var anos = Math.trunc(diferencia_dias / 365);
   console.log("Años: " + anos);
-  ////////////////////////////////////////
+  ///////////////////////////////////////
   if (anos < 18) {
     alert("Usted es menor de edad, con " + anos + " años");
     return false;
