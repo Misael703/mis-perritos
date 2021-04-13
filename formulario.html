@@ -61,9 +61,33 @@
 
           <input class="btn-registrar" type="submit" value="Registrar">
           <input class="btn-registrar" type="button" value="Validar Formulario" onclick="validarForm()">
+          <input class="btn-registrar" type="button" value="Grabar" onclick="grabar()">
         </div>
         </form>
       </section>
+      <script src="js/usuario.js">
+        var arreglo = new Array();
+        var ind=0;
+        function grabar(){
+          var rut = document.getElementById('txtRut').value;
+          var nombre = document.getElementById('txtNombre').value;
+          var apellidos = document.getElementById('txtApellidos').value;
+          var fecha = document.getElementById('txtFechaNaci').value;
+          usu = new.usuario();
+          usu.setRut(rut);
+          usu.setNombre(nombre);
+          usu.setApellido(apellidos);
+          usu.setFecha(fecha);
+          console.log(usu.imprimir());
+          arreglo[ind] = JSON.stringify(usu);
+          localStorage.setItem('registros',arreglo);
+          alert('Datos guardados correctamente');
+          ind++;
+
+        }
+
+
+      </script>
     </main>
     <footer>
       <div class="contenedor">
